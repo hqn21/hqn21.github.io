@@ -2,10 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.haoquan.me/categories/</loc>
+    <loc>https://blog.haoquan.me/tags/algorithm/</loc>
+    <lastmod>2022-07-07T14:59:43+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.haoquan.me/tags/c&#43;&#43;/</loc>
+    <lastmod>2022-07-07T14:59:43+08:00</lastmod>
   </url><url>
     <loc>https://blog.haoquan.me/</loc>
+    <lastmod>2022-07-07T14:59:43+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.haoquan.me/posts/narcissistic-number/</loc>
+    <lastmod>2022-07-07T14:59:43+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.haoquan.me/posts/</loc>
+    <lastmod>2022-07-07T14:59:43+08:00</lastmod>
   </url><url>
     <loc>https://blog.haoquan.me/tags/</loc>
+    <lastmod>2022-07-07T14:59:43+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.haoquan.me/categories/</loc>
+  </url><url>
+    <loc>https://blog.haoquan.me/archives/</loc>
+  </url><url>
+    <loc>https://blog.haoquan.me/search/</loc>
   </url>
 </urlset>
