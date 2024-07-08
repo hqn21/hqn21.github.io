@@ -11,14 +11,21 @@
     </image>
     <generator>Hugo -- 0.128.2</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 07 Jul 2022 14:59:43 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Nov 2022 14:59:43 +0800</lastBuildDate>
     <atom:link href="https://blog.haoquan.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Narcissistic Number 水仙花數</title>
       <link>https://blog.haoquan.me/posts/narcissistic-number/</link>
-      <pubDate>Thu, 07 Jul 2022 14:59:43 +0800</pubDate>
+      <pubDate>Wed, 09 Nov 2022 14:59:43 +0800</pubDate>
       <guid>https://blog.haoquan.me/posts/narcissistic-number/</guid>
       <description>尋找 0 至 1000 的 Narcissistic Number 並使迴圈在 200 次以內結束</description>
+    </item>
+    <item>
+      <title>111 學年度國立高雄大學資訊工程學系面試經驗分享</title>
+      <link>https://blog.haoquan.me/posts/nuk-interview/</link>
+      <pubDate>Mon, 06 Jun 2022 18:48:51 +0800</pubDate>
+      <guid>https://blog.haoquan.me/posts/nuk-interview/</guid>
+      <description>簡述高大資工面試形式、時長、內容</description>
     </item>
   </channel>
 </rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Haoquan&#39;s Blog</title>
-    <link>https://blog.haoquan.me/</link>
-    <description>Recent content on Haoquan&#39;s Blog</description>
+    <title>University on Haoquan&#39;s Blog</title>
+    <link>https://blog.haoquan.me/tags/university/</link>
+    <description>Recent content in University on Haoquan&#39;s Blog</description>
     <image>
       <title>Haoquan&#39;s Blog</title>
       <url>https://blog.haoquan.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -11,15 +11,8 @@
     </image>
     <generator>Hugo -- 0.128.2</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 09 Nov 2022 14:59:43 +0800</lastBuildDate>
-    <atom:link href="https://blog.haoquan.me/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Narcissistic Number 水仙花數</title>
-      <link>https://blog.haoquan.me/posts/narcissistic-number/</link>
-      <pubDate>Wed, 09 Nov 2022 14:59:43 +0800</pubDate>
-      <guid>https://blog.haoquan.me/posts/narcissistic-number/</guid>
-      <description>尋找 0 至 1000 的 Narcissistic Number 並使迴圈在 200 次以內結束</description>
-    </item>
+    <lastBuildDate>Mon, 06 Jun 2022 18:48:51 +0800</lastBuildDate>
+    <atom:link href="https://blog.haoquan.me/tags/university/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>111 學年度國立高雄大學資訊工程學系面試經驗分享</title>
       <link>https://blog.haoquan.me/posts/nuk-interview/</link>
