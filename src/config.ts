@@ -14,7 +14,7 @@ export const themeConfig: ThemeConfig = {
     // author name
     author: 'Hao-Quan Liu',
     // site url
-    url: 'https://hqn21.github.io',
+    url: 'https://blog.haoquan.me',
     // base path
     // root directory for all pages and assets
     base: '/', // e.g., '/blog', '/docs'
