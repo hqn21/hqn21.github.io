@@ -1,8 +1,8 @@
 ---
-title: Editing Text Files in a Pure CLI Environment Using the vi Editor
+title: Editing Text Files with vi in a Pure CLI Environment
 published: 2026-01-18T17:24:12.746Z
 description: 'vi is an extremely lightweight text editor with many basic features, usually pre-installed on most Unix systems. Both Ubuntu and macOS come with the vi editor built-in. To flexibly modify text files on systems with only a CLI interface, learning to use the vi editor is essential.'
-updated: ''
+updated: 2026-01-19T18:59:50.265Z
 tags:
   - Unix
   - Course Notes
