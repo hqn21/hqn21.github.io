@@ -82,7 +82,7 @@ export const themeConfig: ThemeConfig = {
     // giscus
     // https://giscus.app/
     giscus: {
-      repo: 'hqn21/blog',
+      repo: 'hqn21/hqn21.github.io',
       repoId: 'R_kgDOQ8Boiw',
       category: 'General',
       categoryId: 'DIC_kwDOQ8Boi84C1HFd',
