@@ -2,7 +2,7 @@
 title: 透過 vi 編輯器在純 CLI 環境下編輯文字檔案
 published: 2026-01-18T17:24:12.746Z
 description: 'vi 是一個極度輕量且包含許多基礎功能的文字編輯器，通常預設安裝在大多數 Unix 系統中，像是 Ubuntu 或 macOS 都有內建 vi 編輯器，為了在只有 CLI 介面的系統上靈活地修改文字檔案，學會使用 vi 編輯器是非常重要的。'
-updated: ''
+updated: 2026-01-20T04:45:13.100Z
 tags:
   - Unix
   - 課程筆記
@@ -15,7 +15,7 @@ abbrlink: 'vi-editor-guide'
 
 vi 是一個極度輕量且包含許多基礎功能的文字編輯器，通常預設安裝在大多數 Unix 系統中，像是 Ubuntu 或 macOS 都有內建 vi 編輯器，為了在只有 CLI 介面的系統上靈活地修改文字檔案，學會使用 vi 編輯器是非常重要的。
 
-# 開始使用
+## 開始使用
 要使用 vi 編輯器，你需要在終端機中輸入以下指令：
 ```bash
 vi [options] [file(s)]
@@ -38,7 +38,7 @@ flowchart TD
     Command -->|"ZZ"| End
 ```
 
-# Command Mode
+## Command Mode
 如上面流程圖所示，進入 vi 編輯器後會直接進到 Command Mode，在這個模式下可以透過各種指令來做到**移動游標**、**編輯文字**、**複製貼上**、**進入 Insert Mode**、**進入 Last Line Mode** 等功能。
 
 而這些指令會以下面的語法呈現：
@@ -46,7 +46,7 @@ flowchart TD
 [要執行幾次 operation] operation [要作用在幾個 target 上] target
 ```
 
-## 移動游標
+### 移動游標
 可以透過 `Ctrl` + `G` 來查看目前游標所在位置，以下是一些常用的游標移動指令：
 
 | Command | 動作 |
@@ -61,7 +61,7 @@ flowchart TD
 | `b` | 移到上一個 word 的第一個 character |
 | `}` | 移到下一個 paragraph |
 
-## 編輯文字
+### 編輯文字
 | Command | 意義 | 動作 |
 | --- | --- | --- |
 | `dd` | delete | 刪除 current line |
@@ -72,7 +72,7 @@ flowchart TD
 | `X` | delete | 刪除 cursor 前一位的 character |
 | `u` | undo | 返回上一個動作 |
 
-## 複製貼上
+### 複製貼上
 | Command | 動作 |
 | --- | --- |
 | `y2W` | 從目前 cursor 位置向右複製兩個 words |
@@ -96,7 +96,7 @@ flowchart TD
 | `:j` | 類似 `J` |
 | `:j!` | 類似 `gJ` |
 
-## 進入 Insert Mode
+### 進入 Insert Mode
 | Command | 意義 | 動作 |
 | --- | --- | --- |
 | `a` | append | 在 cursor 後面新增字 |
@@ -112,15 +112,15 @@ flowchart TD
 | `s` | substitute | replace 一個 character 後進入 insert mode |
 | `S` | substitute | 先把整行的內容刪掉之後進入 insert mode |
 
-## 進入 Last Line Mode
+### 進入 Last Line Mode
 直接輸入 `:` 就可以進入 Last Line Mode。
 
-# Insert Mode
+## Insert Mode
 如其名，就是輸入文字的模式，在這個模式下你可以像一般文字編輯器一樣輸入文字，當你想要回到 Command Mode 時，只需要按下 `Esc` 鍵即可。
 
-# Last Line Mode
+## Last Line Mode
 
-## 檔案相關
+### 檔案相關
 | Command | 動作 |
 | --- | --- |
 | `: n, m w file` | 將第 n 行到第 m 行寫入新檔案 |
@@ -141,7 +141,7 @@ flowchart TD
 | `%` | 在編輯指令中代表目前的 filename |
 | `#` | 在編輯指令中代表替代的 filename |
 
-## 取代與搜尋
+### 取代與搜尋
 | Command | 動作 |
 | --- | --- |
 | `:s/john/jane/` | 在目前這一行將 `john` 替換為 `jane`，僅一次 |
@@ -153,16 +153,16 @@ flowchart TD
 | `:%s/terrible/wonderful/gc` | 使用 `c` 選項進行互動式替換，將 `terrible` 替換為 `wonderful`（僅限 vim、gvim） |
 | `:%s/^/ \=line(".") . ". "/g` | 將 buffer 中所有行的行號永久加到每行開頭（僅限 vim、gvim） |
 
-## 環境設置
+### 環境設置
 
-### 設置縮寫
+#### 設置縮寫
 | Command | 動作 |
 | --- | --- |
 | `:ab in out` | 在 Insert mode 中將 `in` 作為 `out` 的縮寫 |
 | `:unab in` | 移除 `in` 的縮寫 |
 | `:ab` | 列出所有縮寫 |
 
-### 設置映射
+#### 設置映射
 | Command | 動作 |
 | --- | --- |
 | `:map string sequence` | 將字元字串映射為一連串指令。使用 #1、#2 等代表 function keys |
@@ -175,7 +175,7 @@ flowchart TD
 | `q` | 停止錄製（vim 和 gvim） |
 | `@x` | 執行指定字母 x 的 register。使用 `@@` 重複上一個 `@` 指令 |
 
-### 設置選項
+#### 設置選項
 | Command | 動作 |
 | --- | --- |
 | `:set x` | 啟用 boolean option x，顯示其他 options 的值 |

@@ -2,7 +2,7 @@
 title: Editing Text Files with vi in a Pure CLI Environment
 published: 2026-01-18T17:24:12.746Z
 description: 'vi is an extremely lightweight text editor with many basic features, usually pre-installed on most Unix systems. Both Ubuntu and macOS come with the vi editor built-in. To flexibly modify text files on systems with only a CLI interface, learning to use the vi editor is essential.'
-updated: 2026-01-19T18:59:50.265Z
+updated: 2026-01-20T04:45:13.100Z
 tags:
   - Unix
   - Course Notes
@@ -15,7 +15,7 @@ abbrlink: 'vi-editor-guide'
 
 vi is an extremely lightweight text editor with many basic features, usually pre-installed on most Unix systems. Both Ubuntu and macOS come with the vi editor built-in. To flexibly modify text files on systems with only a CLI interface, learning to use the vi editor is essential.
 
-# Getting Started
+## Getting Started
 To use the vi editor, you need to enter the following command in the terminal:
 ```bash
 vi [options] [file(s)]
@@ -38,7 +38,7 @@ flowchart TD
     Command -->|"ZZ"| End
 ```
 
-# Command Mode
+## Command Mode
 As shown in the flowchart above, after entering the vi editor, you will directly enter Command Mode. In this mode, you can use various commands to **move the cursor**, **edit text**, **copy and paste**, **enter Insert Mode**, **enter Last Line Mode** and more.
 
 These commands follow the syntax below:
@@ -46,7 +46,7 @@ These commands follow the syntax below:
 [number of times to execute operation] operation [number of targets to act on] target
 ```
 
-## Moving the Cursor
+### Moving the Cursor
 You can use `Ctrl` + `G` to check the current cursor position. Here are some commonly used cursor movement commands:
 
 | Command | Action |
@@ -61,7 +61,7 @@ You can use `Ctrl` + `G` to check the current cursor position. Here are some com
 | `b` | Move to the first character of the previous word |
 | `}` | Move to the next paragraph |
 
-## Editing Text
+### Editing Text
 | Command | Meaning | Action |
 | --- | --- | --- |
 | `dd` | delete | Delete the current line |
@@ -72,7 +72,7 @@ You can use `Ctrl` + `G` to check the current cursor position. Here are some com
 | `X` | delete | Delete the character before the cursor |
 | `u` | undo | Undo the last action |
 
-## Copy and Paste
+### Copy and Paste
 | Command | Action |
 | --- | --- |
 | `y2W` | Copy two words to the right from the current cursor position |
@@ -96,7 +96,7 @@ You can use `Ctrl` + `G` to check the current cursor position. Here are some com
 | `:j` | Similar to `J` |
 | `:j!` | Similar to `gJ` |
 
-## Entering Insert Mode
+### Entering Insert Mode
 | Command | Meaning | Action |
 | --- | --- | --- |
 | `a` | append | Add text after the cursor |
@@ -112,15 +112,15 @@ You can use `Ctrl` + `G` to check the current cursor position. Here are some com
 | `s` | substitute | Replace one character and enter insert mode |
 | `S` | substitute | Delete the entire line content and enter insert mode |
 
-## Entering Last Line Mode
+### Entering Last Line Mode
 Simply type `:` to enter Last Line Mode.
 
-# Insert Mode
+## Insert Mode
 As the name suggests, this is the mode for entering text. In this mode, you can type text just like in a regular text editor. When you want to return to Command Mode, simply press the `Esc` key.
 
-# Last Line Mode
+## Last Line Mode
 
-## File Operations
+### File Operations
 | Command | Action |
 | --- | --- |
 | `: n, m w file` | Write lines n through m to a new file |
@@ -141,7 +141,7 @@ As the name suggests, this is the mode for entering text. In this mode, you can 
 | `%` | Represents the current filename in edit commands |
 | `#` | Represents the alternate filename in edit commands |
 
-## Search and Replace
+### Search and Replace
 | Command | Action |
 | --- | --- |
 | `:s/john/jane/` | Replace `john` with `jane` on the current line, once only |
@@ -153,16 +153,16 @@ As the name suggests, this is the mode for entering text. In this mode, you can 
 | `:%s/terrible/wonderful/gc` | Use the `c` option for interactive replacement of `terrible` with `wonderful` (vim, gvim only) |
 | `:%s/^/ \=line(".") . ". "/g` | Permanently add line numbers to the beginning of all lines in the buffer (vim, gvim only) |
 
-## Environment Settings
+### Environment Settings
 
-### Setting Abbreviations
+#### Setting Abbreviations
 | Command | Action |
 | --- | --- |
 | `:ab in out` | Define `in` as an abbreviation for `out` in Insert mode |
 | `:unab in` | Remove the abbreviation for `in` |
 | `:ab` | List all abbreviations |
 
-### Setting Mappings
+#### Setting Mappings
 | Command | Action |
 | --- | --- |
 | `:map string sequence` | Map a character string to a sequence of commands. Use #1, #2, etc. to represent function keys |
@@ -175,7 +175,7 @@ As the name suggests, this is the mode for entering text. In this mode, you can 
 | `q` | Stop recording (vim and gvim) |
 | `@x` | Execute the register of the specified letter x. Use `@@` to repeat the last `@` command |
 
-### Setting Options
+#### Setting Options
 | Command | Action |
 | --- | --- |
 | `:set x` | Enable boolean option x, display values of other options |
