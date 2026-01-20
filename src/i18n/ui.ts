@@ -104,7 +104,7 @@ export const ui: Record<Language, Translation> = {
   'zh-tw': {
     title: 'haoquan',
     subtitle: 'Code & Life',
-    description: '關於我的軟體開發旅程與日常生活的部落格。',
+    description: '關於我軟體開發旅程與日常生活的部落格。',
     posts: '文章',
     tags: '標籤',
     about: '關於',
