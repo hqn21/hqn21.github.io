@@ -8,7 +8,7 @@ export const themeConfig: ThemeConfig = {
     // site subtitle
     subtitle: 'Code & Life',
     // site description
-    description: 'A blog about software development and everyday life.',
+    description: 'A blog about my software development journey and everyday life.',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
     i18nTitle: true, // true | false
     // author name
